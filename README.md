@@ -1,13 +1,13 @@
 Loteria v1.0.0
 ---
 
-*Loteria* is a simple platform to generate lottery contracts on Ethereum.
+**Loteria** is a simple platform to generate lottery contracts on Ethereum.
 
 ### How it works
 A Loteria has a fixed number of tickets available to buy, and a ticket price. When all lottery tickets are sold, one of the tickets is selected randomly, and the ticket owner will get all the money stored in the contract.
 
 ### The Loteria Contract
-*Constructor*
+**Constructor**
 
 The Loteria contract constructor takes three parameters
 
@@ -19,15 +19,15 @@ The address that created the contract, is the lottery owner. The lottery owner w
 * `endLottery()`: This will select a winner randomnly
 * `cancelLottery()` the lottery: Everyone who bought a ticket will get the money back
 
-*Joining a Lottery*
+**Joining a Lottery**
 
 Anyone can join any lottery by calling `buyTicket()` while sending the `ticketPrice` amount to the contract. *Make sure the lottery is still available before joining*
 
-*Constants*
+**Constants**
 * `getTicketPrice() uint` returns the contract's `ticketPrice`
 * `getNumberOfTickets() uint` returns the contract's `numberOfTickets`
 * `getNumberOfTicketsSold() uint` returns the contract's `numberOfTicketsSold`
 * `lotteryIsOver() bool` returns `true` if lottery is no longer availabe, returns `false` if lottery is still available
 
 
-*If a lottery is over, the contract become useless, but it will not be destroyed*
+**If a lottery is over, the contract become useless, but it will not be destroyed**
